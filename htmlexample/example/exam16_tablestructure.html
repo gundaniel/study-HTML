@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 구조(thead, tbody, tfoot)확인</title>
+    <style>
+        table {
+            /* border-collapse: collapse;  */
+            border-collapse: seperater;
+            /*테두리 분리*/
+            border-spacing: 5px;
+            width: 400px;
+        }
+        td,th {
+            border: 2px solid blue;
+            /* 선 두께, 선 모양, 선색상 */
+        }
+        caption {
+            caption-side: top;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table border="1">
+        <div style="border:1px solid blue">
+            <h3><strong>교제 가격표</strong></h3>
+        </div>
+        <thead>
+        <tfoot>
+            <td>합계</td>
+            <td colspan="3">107,000원</td>
+        </tfoot>
+        <tr>
+            <th>서적명</th>
+            <th>출판사</th>
+            <th>가격</th>
+            <th>기타</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>html5</td>
+                <td>미래닷컴</td>
+                <td>55,000원</td>
+                <td>360 페이지</td>
+            </tr>
+            <tr>
+                <td>CSS3</td>
+                <td>한빛미디어</td>
+                <td>32,000원</td>
+                <td rowspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>JAVAscript</td>
+                <td>누리출판사</td>
+                <td>20,000원</td>
+            </tr>
+
+
+        </tbody>
+
+
+    </table>
+
+
+</body>
+
+</html>

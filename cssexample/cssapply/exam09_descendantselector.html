@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>후손(하위)선택자와 자식 선택자 확인</title>
+    <style type="text/css">
+        div#header h4 {
+            /*하위선택자 모두 적용 */
+            color: green;
+        }
+        div#footer>h4 {
+            /*바로 하위인 자식 선택자만 적용 */
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h3>하위 선택자 사용예시</h3>
+        <h4>HTML <-적용됨< /h4>
+                <div class="text">
+                    <h4>HyperText markup Language <-적용됨< /h4>
+                        의 약어로 웹페이지를 만들기 위한 언어로 웹브라우저 위에서 동작하는 언어이다.
+                </div>
+    </div>
+    <hr />
+    <div id="footer">
+        <h3>자식 선택자 사용예시</h3>
+        <h4>CSS <-적용됨< /h4>
+                <div class="text">
+                    <h4>Cascading Style Sheets <-적용안됨< /h4>
+                        의 약어로 HTML이 정보를 표현한다면, CSS는 HTML을 시각적으로 꾸며주는 역활을 한다.
+                </div>
+    </div>
+</body>
+</html>

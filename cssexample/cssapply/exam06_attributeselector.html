@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자 확인</title>
+    <style type="text/css">
+        a[target="_blank"] {color:green}
+        div[class^="first"]{
+            color:red;
+        }
+        div[class$="text"]{
+            font-style: italic;
+        }
+        input{
+            border: 1px solid black;
+        }
+        input[type="text"]{
+            width: 100;
+            margin-right: 10px;
+            background-color: rgb(78, 78, 78);
+        }
+        input[type="submit"]{
+            color: azure;
+            font-weight: bold;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first_text">[로그인 화면]</div>
+    <div class="second_text">아이디와 비밀번호를 입력하시오</div><br />
+    <div>아이디는 회원가입시 영문,숫자 조합하여 6 ~ 12글자로 입력하셔야 합니다.</div><br />
+    <div>비밀번호는 회원가입시 영문,숫자,_와 #으로만 조합하여 8 ~ 16글자로 입력하셔야 합니다</div><br />
+
+    <form name="input" method="get">
+        <label>아이디</label>
+        <input type="text" name="id" id="id" />
+        <label>비밀번호</label>
+        <input type="password" name="pwd" id="pwd" />
+        <input type="submit" value="로그인" /> <br />
+
+        <a href="#" target="_blank">회원가입</a>
+        <a href="#">아이디 찾기</a>
+        <a href="#">비밀번호 찾기</a>
+    </form>
+
+    <h3>문서 다운 받기</h3>
+    <ul>
+        <li><a href="hwp.gif">hwp 파일</a></li><!-- 파일이 존재하지 않기 때문에 클릭시 에러발생 -->
+        <li><a href="xls.gif">엑셀 파일</a></li>
+    </ul>
+</body>
+
+</html>

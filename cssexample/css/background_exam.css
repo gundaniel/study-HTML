@@ -1,0 +1,11 @@
+body {
+    color: #665544;
+    font-family: "Comic Sans MS";
+}
+div {
+    background: url(../images/tulip.gif) no-repeat fixed right center;
+    background-size: 250px 420px;
+}
+em {
+    font-weight: bold;
+}

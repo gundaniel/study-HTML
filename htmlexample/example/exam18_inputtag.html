@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력양식 태그확인 -exam18_input_type.html</title>
+</head>
+
+<body>
+    <form method="get">
+        <table>
+            <tr>
+                <td>
+                    <label for="user_id">아이디</label>
+                </td>
+                <td>
+                    <input type="text" name="user_id" id="user_id" size="25" maxlength="12" placeholder="ID 입력" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">비밀번호</label>
+                </td>
+                <td>
+                    <input type="password" name="pwd" size="25" maxlength="12" placeholder="PASSWORD 입력" />
+                    <!--placeholder = 힌트-->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>이름</label>
+                </td>
+                <td>
+                    <input type="text" name="user_name" id="user_name" size="25" maxlength="5" placeholder="이름 입력" />
+                </td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td>
+                    <!--name이 중복이 되어야 그룹이 되어 양자선택이 가능 (다르면 둘다 선택됨)-->
+                    <!--선택했을 때의 값이 value-->
+                    <!--id에 입력된 란을 label for에 주면 연결이 됨-->
+                    <!--checked는 먼저 선택이 기본값으로 되어있음을 표시(값을 생략가능)-->
+                    <input type="radio" name="gender" id="man" value="man" checked="checked" />
+                    <label for="man">남자</label>
+                    <input type="radio" name="gender" id="women" value="women" />
+                    <label for="women">여자</label>
+                </td>
+            </tr>
+            <tr>
+                <td>배송지 선택&nbsp;&nbsp;</td>
+                <td>
+                    <input type="radio" name="del" id="door" value="door" checked="checked" />
+                    <label for="door">문앞</label>
+                    <input type="radio" name="del" id="safe" value="safe" />
+                    <label for="safe">경비실</label>
+                    <input type="radio" name="del" id="another" value="another" />
+                    <label for="another">그외 다른장소</label>
+                </td>
+            </tr>
+            <tr>
+                <td>취미</td>
+                <td>
+                    <input type="checkbox" name="hobby" id="hobby1" value="weight">
+                    <label for="hobby1">웨이트</label>
+                    <input type="checkbox" name="hobby" id="hobby2" value="sing">
+                    <label for="hobby2">노래부르기</label>
+                    <input type="checkbox" name="hobby" id="hobby3" value="drum">
+                    <label for="hobby3">드럼</label>
+                    <br />
+                    <input type="checkbox" name="hobby" id="hobby4" value="game">
+                    <label for="hobby4">게임</label>
+                    <input type="checkbox" name="hobby" id="hobby5" value="travel">
+                    <label for="hobby5">여행</label>
+                    <input type="checkbox" name="hobby" id="hobby6" value="cook">
+                    <label for="hobby6">요리</label>
+                    <br />
+                    <input type="checkbox" name="hobby" id="hobby7" value="fishing">
+                    <label for="hobby7">낚시</label>
+                    <input type="checkbox" name="hobby" id="hobby8" value="tracking">
+                    <label for="hobby7">등산</label>
+                </td>
+            </tr>
+            <tr>
+                <td>컴퓨터 운영체제</td>
+                <td>
+                    <select name="OS" size="3" multiple> <!--multiple 여러개를 선택가능-->
+                        <option value="Windows">윈도우 7</option>
+                        <option value="linux">리눅스</option>
+                        <option value="solalis">솔라리스</option>
+                        <option value="Mac" selected="selected">맥</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>웹 프로그래밍 과목(1)</td>
+                <td>
+                    <select name="lessonOne">
+                        <option value="JAVAscript">자바스크립트</option>
+                        <option value="HTML5">HTML5</option>
+                        <option value="Jquery">제이쿼리</option>
+                        <option value="JSP" selected>JSP</option> <!--selceted를 입력시 화면에 먼저 보여줌-->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>웹프로그래밍 과목(2)</td>
+                <td>
+                    <select name="lessontwo">
+                        <optgroup label="web">
+                            <option value="html5">HTML5</option>
+                            <option value="Jquery">제이쿼리</option>
+                            <option value="javascript">자바스크립트</option>
+                            <option value="css">CSS</option>
+                        </optgroup>
+                        <optgroup label="database">
+                            <option value="java">자바</option>
+                            <option value="oracle">오라클</option>
+                            <option value="mysql">mySQL</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>배우는 과목</td>
+                <td>
+                    <input type="text" name="language" list="language" />
+                    <datalist id="language"> <!--항목을 찾게 만들어줌-->
+                        <option value="Java">자바</option>
+                        <option value="Database">데이터베이스</option>
+                        <option value="Html">HTML5</option>
+                        <option value="Css">CSS</option>
+                        <option value="Javascript">자바스크립트</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>기타사항</td>
+                <td>
+                    <textarea rows="7" cols="30" name="text">비고</textarea>
+                </td>
+                <!--공백없이 입력해야 내가 원하는 글자가 나옴(공백시 같이 들어감)-->
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="목록" onclick="alert('잘못눌렀습니다')" />
+                    <button type="button" onclick="alert('당첨입니다')">목록</button>
+                    <input type="submit" value="전송" onclick="alert('전송이 완료되었습니다')" />
+                    <input type="reset" value="취소" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

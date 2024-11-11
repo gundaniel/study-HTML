@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 스타일 속성</title>
+    <style type="text/css">
+        body{
+            margin: 0px; /* margin:여백*/
+        }
+        div {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            color: white;
+
+            /*
+            background-color: ##000;
+            background-image:url("../images/cat.gif");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            */
+
+            /*위 사항을 한꺼번에 설정 */
+            background: #000 url(../images/cat.gif) no-repeat center bottom;
+            background-size: 300px 300px;
+
+            text-align: center;
+            /*div 내 텍스트 정렬*/
+            margin-left: auto;
+            /*div 자체를 가운데로 정렬*/
+            margin-right: auto;
+            /*div 자체를 가운대로 정렬*/
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>고양이의 하루</h1>
+        <pre>
+        ＊     ＊         ＊              ＊
+             ＊                    ＊
+
+        ＊             ＊               ＊    ＊
+                                    ＊
+        ＊        ＊
+        ＊                  ＊                 ＊
+                ＊       ＊              ＊
+                        ＊                  ＊ 
+                        
+ ＊          ＊              ＊          ＊         ＊
+        </pre>
+    </div>
+
+</body>
+
+</html>

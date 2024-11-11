@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크관련 가상 클래스 선택자 확인</title>
+    <style type="text/css">
+        p {
+            height: 50px;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:link {
+            color: blue;
+        }
+        a:visited {
+            color: red;
+        }
+        a:hover {
+            color: greenyellow;
+            background-color: black;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        a:active {
+            color: yellow
+        }
+        input[type="text"]:focus {
+            background-color: skyblue;
+        }
+        div:hover {
+            font-size: 30px;
+            background-color: red;
+            color: blue;
+            font-weight: bold;
+    
+        }
+        div {margin-bottom: 30px;}
+    </style>
+    <script type="text/JavaScript">
+        function goURL(){
+            location.href = document.getElementById("url").value;
+        }
+    </script>
+</head>
+
+<body>
+    <p>
+        <a href="https://www.naver.com" target="_blank">네이버</a>
+        사이트로 이동하기
+    </p>
+    <div>모든 만화의 주인공은 처음부터 잘되는 것이 아니라 성장하는 것이 주인공이었다 - 김서건</div>
+
+    <form>
+        <input type="text" name="url" id="url" />
+        <button type="button" onclick="goURL()">이동</button>
+    </form>
+</body>
+
+</html>
