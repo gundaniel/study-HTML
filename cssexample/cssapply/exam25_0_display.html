@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블록과 인라인</title>
+    <style type="text/css">
+        span{
+            width: 100px; height: 100px;
+        }
+        div#none span{display: none;}
+        div#inline span{display: inline;}
+        div#block span{display: block;}
+        div#inblock span{display: inline-block;}
+        
+        div .html {
+            background-color: #FFE400;
+        }
+        div .css{
+            background-color: #B5B2FF;
+            
+        }
+        div .js{
+            background-color: #D941CC;
+        }
+    </style>
+</head>
+<body>
+    <div id="none">웹표준은
+        <span class="html">HTML</span>구조,
+        <span class="css">CSS</span>디자인,
+        <span class="js">javascript</span>동작이 있습니다.
+    </div>
+    <div id="inline">웹표준은
+        <span class="html">HTML</span>구조,
+        <span class="css">CSS</span>디자인,
+        <span class="js">javascript</span>동작이 있습니다.
+    </div>
+    <div id="block">웹표준은
+        <span class="html">HTML</span>구조,
+        <span class="css">CSS</span>디자인,
+        <span class="js">javascript</span>동작이 있습니다.
+    </div>
+    <div id="inblock">웹표준은
+        <span class="html">HTML</span>구조,
+        <span class="css">CSS</span>디자인,
+        <span class="js">javascript</span>동작이 있습니다.
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 예제</title>
+    <style type="text/css">
+        body {
+            color: #666666;
+            background-color: #f8f8f8;
+        }
+
+        table {
+            border-collapse: collapse;
+            font-size: 15px;
+            border-color: #cbd2d8;
+        }
+
+        fieldset{
+            width: 300px;
+            border-color: #d6d6d6;
+            background-color: white;
+        }
+
+        #table1 td{
+            background-color:#e0e9f0;
+        }
+
+        ul {
+            list-style: circle url("../images/icon.png");
+        }
+        tr#tr1 {
+            background-color: #90b4d6;
+            color: white;
+            text-shadow: 0px 1px 1px black;
+            border-bottom:3px solid #547ca0;
+
+        }
+
+        button {
+            background-color: #009966;
+            color: white;
+            border-radius: 10%;
+            border-color: #006633;
+            align-content: center;
+
+        }
+        button:hover{
+            background-color: #00cc33;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>시 워크샵(Poetry Workshops)</h1>
+    <h5>1년동안 다양한 시 워크샵과 심포지엄을 실시합니다.</h5>
+    <h5>다음과 같은 이벤트가 회원들에게 무료로 제공되오니 참고하여 주시기 바랍니다.</h5>
+    <ul>
+        <li>A Poetic Perspective</li>
+        <li>walt Whitman at War</li>
+        <li>Found Poems and Outsider Poetry</li>
+    </ul>
+
+    <table border="1" id="table1">
+        <tr id="tr1">
+            <th></th>
+            <th>뉴욕</th>
+            <th>시카고</th>
+            <th>샌프란시스코</th>
+        </tr>
+        <tr>
+            <td>A Poetic Perspective</td>
+            <td>2024년 2월 4일 (토)<br>오전11시-오후2시</td>
+            <td>2024년 3월 3일 (토)<br>오전11시-오후2시</td>
+            <td>2024년 3월 17일 (토)<br>오전11시-오후2시</td>
+        </tr>
+        <tr>
+            <td>walt Whitman at War</td>
+            <td>2024년 4월 7일 (토)<br>오전11시-오후1시</td>
+            <td>2024년 5월 5일 (토)<br>오전11시-오후1시</td>
+            <td>2024년 5월 19일 (토)<br>오전11시-오후1시</td>
+        </tr>
+        <tr>
+            <td>Found Poems & Outsider Poetry</td>
+            <td>2024년 6월 9일 (토)<br>오전11시-오후2시</td>
+            <td>2024년 7월 7일 (토)<br>오전11시-오후2시</td>
+            <td>2024년 7월 21일 (토)<br>오전11시-오후2시</td>
+        </tr>
+        <tr>
+            <td>Natural Death: An Exploration</td>
+            <td>2024년 8월 4일 (토)<br>오전11시-오후4시</td>
+            <td>2024년 9월 8일 (토)<br>오전11시-오후4시</td>
+            <td>2024년 9월 15일 (토)<br>오전11시-오후4시</td>
+        </tr>
+    </table>
+    <form>
+        <fieldset>
+            <legend>관심강좌등록</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">이름:</label>
+                        <input type="text" name="name" size="15" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">이메일: </label>
+                        <input type="text" name="email" size="15" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>가장 가까운 센터:
+                        <select name="lessonOne">
+                            <option value="newwork">뉴욕</option>
+                            <option value="sydni">시드니</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>회원이십니까?
+                        <input type="radio" id="yes" name="radio">
+                        <label for="yes">예</label>
+                        <input type="radio" id="no" name="radio">
+                        <label for="no">아니오</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <button type="submit">등록</button>
+</body>
+
+</html>
