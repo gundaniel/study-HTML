@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스 박스 연습하기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Nanum+Pen+Script&family=Poetsen+One&display=swap" rel="stylesheet">
+
+    <style>
+        .container {
+            width: 780px;
+            display: flex;
+            background-color: #efefef;
+            border: 1px solid #ed7a92;
+            margin-bottom: 30px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            padding: 5px 45px;
+            margin: 5px;
+            width: 120px;
+            background-color: #ed7a92;
+
+        }
+
+        /* 아래의 줄바꿈을 지정하는 */
+        .flex1 {
+            flex-direction: row;
+            flex: wrap-reverse;
+            /* row-reverse 거꾸로배치
+            column 위에서 아래로 + reverse 아래서 위로
+            flex-wrap:nowrap 한줄에 표시
+            flex-wrap:wrap 여러줄에 표시 
+            flew-flow: row nowrap 왼쪽에서 오른쪽 한줄; 
+            */
+        }
+
+        /* 기본 축 방향의 배치를 지정하는 */
+        .flex2 {
+            /*메인축부터*/
+            /* justify-content: flex-start;*/
+            /* 끝부터 정렬*/
+            /* justify-content: flex-end; */
+            /*가운데 정렬*/
+            /* justify-content: center;*/
+            /* 양끝은 여백x 나머지 균등*/
+            /* justify-content: space-between;*/
+            /*균등한 폭배치 양끝여백은 절반*/
+            justify-content: space-around;
+            /*여백이 모두 균등 */
+            /* justify-content: space-evenly;*/
+        }
+
+        /* 교차축 방향(세로)의 배치를 지정하는 align-items */
+        .flex3 {
+            height: 160px;
+            /* align-items: stretch; */
+            /* align-items: flex-start; */
+            align-items: flex-end;
+            /* align-items: center; */
+        }
+
+        .flex4 div {
+            background-color: #ed7a92;
+            margin: 5px;
+            flex-basis: auto;
+        }
+
+        /* 아이템의 폭을 지정하는 flex-basis */
+        .flex5 div {
+            background-color: #ed7a92;
+            margin: 5px;
+        }
+
+        .flex5 .box1 {
+            /*자식 요소의 크기를 지정 */
+            flex-basis: 160px;
+        }
+
+        .flex5 .box2 {
+            flex-basis: 250px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            padding: 5px 45px;
+            margin: 5px;
+            width: 120px;
+            background-color: #ed7a92;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .container1 {
+            width: 740px;
+            height: 500px;
+            background: #fff url(../images/imgfile.jpg) no-repeat;
+            background-size: cover;
+            border: 2px solid #000;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container1 div {
+            color: #fff;
+            font-size: 48px;
+            font-family: "Nanum Pen Script";
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container flex1">
+        <div class="box">
+            <h1>1</h1>
+        </div>
+        <div class="box">
+            <h1>2</h1>
+        </div>
+        <div class="box">
+            <h1>3</h1>
+        </div>
+        <div class="box">
+            <h1>4</h1>
+        </div>
+        <div class="box">
+            <h1>5</h1>
+        </div>
+        <div class="box">
+            <h1>6</h1>
+        </div>
+        <div class="box">
+            <h1>7</h1>
+        </div>
+    </div>
+    <div class="container flex2">
+        <div class="box">
+            <h1>1</h1>
+        </div>
+        <div class="box">
+            <h1>2</h1>
+        </div>
+        <div class="box">
+            <h1>3</h1>
+        </div>
+    </div>
+    <div class="container flex3">
+        <div class="box">
+            <h1>1</h1>
+        </div>
+        <div class="box">
+            <h1>2</h1>
+        </div>
+        <div class="box">
+            <h1>3</h1>
+        </div>
+        <div class="box">
+            <h1>4</h1>
+        </div>
+    </div>
+    <div class="container flex4">
+        <div>
+            <h1>box1</h1>
+        </div>
+        <div>
+            <h1>second box</h1>
+        </div>
+        <div>
+            <h1>3</h1>
+        </div>
+    </div>
+    <div class="container flex5">
+        <div class="box1">
+            <h1>box1</h1>
+        </div>
+        <div class="box2">
+            <h1>second box</h1>
+        </div>
+    </div>
+
+    <div class="container1">
+        <div>걷기 좋은 거리</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+body{
+    width:960px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #665544;
+}
+
+/* 부모에 설정하는 속성 */
+section{  
+display: flex; 
+justify-content: space-between;
+}
+
+/* 자식에 설정하는 속성 */
+.col1{
+    flex-basis:  620px;
+    margin: 10px;
+}
+
+.col2{
+    flex-basis: 300px;
+    margin: 10px;
+}

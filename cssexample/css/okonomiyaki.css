@@ -1,0 +1,43 @@
+/* section 내 컨텐츠(article)영역 */
+article.main-articles {
+    clear: both;
+    overflow: auto;
+    width: 100%;
+}
+
+hgroup {
+    margin-top: 40px;
+    float: left;
+}
+h2{
+    display: block;
+    margin: 10px;
+}
+
+.main-articles div{
+    width: 300px;
+    float: left;
+    margin: 10px;
+}
+img{
+    width: 300px;
+    height: 200px;
+}
+
+.main-articles p{
+    width: 300px;
+    font-size: 14px;
+}
+
+p#oko:hover{
+    font-weight: bold;
+    width: 150px;
+    font-size: large;
+    color: red;
+    background-color: greenyellow;
+}
+
+h2{
+    font-weight: bold;
+}
+

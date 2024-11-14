@@ -1,0 +1,51 @@
+body{
+    width: 300px;
+background-color: #bbf1ef;
+font-family: 'Verdana','Apple SD Gothic Neo','NanumGothic',sans-serif;
+margin: auto;
+text-align: center;
+
+}
+
+h3{
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px auto;
+}
+ul{
+    list-style: none;
+    text-align: center;
+    margin: auto;
+    padding: 0px;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+a{
+    text-decoration-line: none;
+    color: white;
+}
+
+li{
+    width: 300px;
+    border: 1px solid #ff9a9e;
+    background-color: #ff9a9e;
+    color: white;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px 0px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+img{
+    border-radius: 50%;
+    float: center;
+}

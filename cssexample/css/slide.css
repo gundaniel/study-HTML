@@ -1,0 +1,84 @@
+@charset "utf-8";
+body{
+    background-image: url(../images/lol.jpg);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+}
+.clearfix::after,
+.clearfix::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+img{
+    display: block;
+    width: 1000px;
+}
+
+#wrap{}
+
+#header{
+    height: 100px;
+}
+#banner{}
+#contents{
+    height: 200px;
+}
+#footer{
+    height: 100px;
+}
+
+.container{
+    width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.banner{
+    width: 1200px;
+    height: 500px;
+    /* overflow: hidden; */
+    /* h2 기준 잡아주기 */
+    position:relative
+}
+
+.banner h2{
+    /* 위치 잡아주기 */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* 폰트 편집 */
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px #222;
+    z-index: 10;
+}
+.banner .list{
+    width: 1200px;
+    height: 500px;
+    /* 기준점 */
+    position: relative;
+}
+.banner .list .list_img{
+    width: 2000px;
+    height: 1100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

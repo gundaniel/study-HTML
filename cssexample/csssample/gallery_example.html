@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>닮은 꼴 만들기</title>
+    <style type="text/css">
+        body {
+            width: 900px;
+            background-image: url(../images/sea.png);
+            background-size: cover;
+            margin: auto;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+
+        }
+        header h1 {
+            margin: 0;
+            background-color: skyblue;
+            opacity: 0.5;
+            text-align: center;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            border-top: 2px soild #7c5d48;
+            border-bottom: 2px solid #7c5d48;
+            background-color: rgba(255, 255, 255. 0.42);
+            padding: 12px 0px 10px;
+        }
+
+        header nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+
+        section {
+
+            width: 960px;
+        }
+
+        .gel p {
+            height: 30px;
+            font-size: 15px;
+            background-color: salmon;
+            color: black;
+            margin: 0px 10px 0px 10px;
+            font-weight: bold;
+            text-align: center;
+            padding: auto;
+            width: 200px;
+        }
+
+        .gel img {
+            width: 200px;
+            height: 300px;
+            margin: 10px 10px 0px 10px;
+
+        }
+
+        main{
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            width:500px;
+            margin: auto;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>내얼굴 닮은 꼴 찾기</h1>
+            <div>
+                <ul>
+                    <li><a href="#">1번째 닮은 꼴</a></li>
+                    <li><a href="#">2번째 닮은 꼴</a></li>
+                    <li><a href="#">좋아하는 사람</a></li>
+                    <li><a href="#">그냥 좋아하는 사진</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="gel">
+                <img src="../images/kim.jpg" alt="얼굴1">
+                <p>내 얼굴</p>
+            </div>
+            <div class="gel">
+                <img src="../images/horseking.png" alt="닮은 꼴">
+                <p>닮은 꼴</p>
+            </div>
+        </section>
+        <section>
+            <div class="gel">
+                <img src="../images/kim2.jpg" alt="얼굴1">
+                <p>내 얼굴</p>
+            </div>
+            <div class="gel">
+                <img src="../images/samo.png" alt="닮은 꼴">
+                <p>닮은 꼴</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+/* section 내 컨텐츠(article)영역 */
+article.main-articles {
+    clear: both;
+    overflow: auto;
+    width: 100%;
+}
+
+hgroup {
+    margin-top: 40px;
+}
+
+.main-articles figure{
+    float: left;
+    width: 290px;
+    height: 220px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #eeeeee;
+}
+
+.main-articles figcaption {
+    font-size: 90%;
+    text-align: left;
+}

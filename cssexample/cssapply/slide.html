@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지슬라이드 효과3</title>
+    <link rel="stylesheet" href="../css/slide.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="container">
+                <article class="header"></article>
+            </div>
+        </div>
+        <section id="banner">
+            <div class="container">
+                <article class="banner">
+                    <h2>league of legend</h2>
+                    <ul class="list">
+                        <li class="list_img">
+                            <img src="../images/lol.jpg" alt="배너이미지01">
+                        </li>
+                        <li class="list_img">
+                            <img src="../images/lol2.jpg" alt="배너이미지02">
+                        </li>
+                        <li class="list_img">
+                            <img src="../images/lol.jpg" alt="배너이미지03">
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section id="contents">
+            <div class="container">
+                <article class="contents"></article>
+            </div>
+        </section>
+        <div id="footer">
+            <div class="container">
+                <article class="footer"></article>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+        // fadein & fadeout
+        $(".banner > ul > li").hide();
+        // li를 숨겨줘라
+        $(".banner > ul > li:first-child").show();
+        // 첫번째 아이를 보여줘라
+
+        setInterval(function(){
+            $(".banner > ul > li:first-child").fadeOut(500).next().fadeIn(500).
+            // 첫번째 아이를 선택해서 서서히 없애고 다음 아이를 서서히 보여줘라
+            end(1000).appendTo(".banner > ul");
+            // end(1000)> 지금 선택된 아이 (두번째 배너) 전 배너(첫번째배너)를 선택해서 appenTo로 세번쨰 배너 아래에 끼워 넣어줘라
+        },3000);
+
+ 
+    </script>
+</body>
+</html>
