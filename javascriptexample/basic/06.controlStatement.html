@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/06.controlStatement.css">
+    <title>제어문 예제</title>
+</head>
+
+<body>
+    <div>
+        <h3>성적구하기</h3>
+        <code>
+    parseInt()함수는 문자를 숫자로 변환하여 반환한다. <br />
+    실수타입변수.toFixed(소숫점 자리수);
+</code>
+        <form>
+            <input type="text" name="kor" id="kor" placeholder="국어점수(kor)" />
+            <input type="text" name="eng" id="eng" placeholder="영어점수(eng)" />
+            <input type="text" name="math" id="math" placeholder="수학점수(math)" />
+            <button type="button" onclick="result()">성적구하기</button><br>
+
+            <input type="text" name="sum" id="sum" placeholder="합계" readonly />
+            <input type="text" name="avg" id="avg" placeholder="평균" readonly />
+            <input type="text" name="grade" id="grade" placeholder="학점" readonly />
+        </form>
+    </div>
+    <div>
+        <h3>숫자 맞추기 게임</h3>
+        <code>[참고] 난수(1~10): Math.floor((Math.random() * 10) +1);</code>
+        <p>이 게임은 컴퓨터가 생성한 숫자를 맞추는 게임입니다. 숫자는 1부터 10사이에 있습니다.</p>
+        <form>
+            <div class="number">
+                <label>숫자:</label>
+                <input type="text" id="user" name="user" />
+                <input type="button" value="확인" onclick="guess()">
+            </div>
+            <div>
+                <lable>추측횟수:</lable>
+                <input type="text" id="guesses" name="guesses" readonly="readonly" />
+                <label>힌트</label>
+                <input type="text" id="result" name="result" readonly="readonly" />
+            </div>
+        </form>
+    </div>
+    <div>
+        <h3>반복문 사용하기</h3>
+        <code>
+                1. 반복문을 사용하여 h태그로 Hello JavaScript를 출력해주세요. <br />
+                2. 반복문을 사용하여 이미지를 출력해주세요. <br />
+            </code>
+        <script>
+            for (let i = 1; i <= 6; i++) {
+                //document.write("<h" + i + ">" + "Javascipt" + "</h" + i + ">");
+                document.write(`<h${i}>Javascript</h${i}>`);
+            }
+            for (let i = 1; i <= 3; i++) {
+                document.write(`<img src="../images/${i}.jpg">`);
+            }
+
+        </script>
+    </div>
+
+    <h3>구구단 출력</h3>
+    <div id="gugudan">
+
+        <script>
+            for (let i = 1; i <= 9; i++) {
+                document.write(`<table>`);
+                    document.write(`<tr><th>${i}단</tr></th>`);
+                for (let j = 1; j <= 9; j++) {
+                   document.write(`<tr><td>${i} X ${j} = ${i * j} </td></tr>`);
+           }
+           document.write(`</table>`);
+        }
+        </script>
+    </div>
+
+
+    <script src="../js/06.controlStatement.js"></script>
+
+
+</body>
+
+</html>

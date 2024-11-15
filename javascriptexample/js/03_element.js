@@ -34,7 +34,7 @@ function accessTagName() {
 
     for (let i = 0; i < tagName.length; i++) {
         const num = tagName[i].innerText;
-        tagName[i].style.backgroundColor = "rgb(130,220," + (50 * num) + ")";
+        tagName[i].style.backgroundColor = `rgb(130,220, ${50 * num})`;
     }
 }
 

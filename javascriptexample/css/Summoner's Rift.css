@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.do-hyeon-regular {
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    background-color: #000;
+}
+
+body {
+    color: black;
+    text-align: center;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #252525
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 940px;
+    height: 260px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+header h1 {
+    width: 940px;
+    height: 160px;
+    text-align: center;
+    overflow: hidden;
+}
+
+header h1 img {
+    height: 240px;
+    margin-top: -30px;
+}
+
+header nav ul {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    font-family: "Black Han Sans", sans-serif;
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    padding: 10px 0;
+    width: 240px;
+    height: 60px;
+    margin: 0;
+    border: 3px solid #555;
+    border-radius: 25px 5px 20px 5px;
+}
+
+header nav ul li:hover{
+    background-color: #111;
+}
+
+/* header nav ul li img {
+    width: 200px;
+    height: 200px;
+} */
+
+body>div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-start;
+}
+
+main {
+    width: 640px;
+    padding: 10px;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+    background-color: #555;
+}
+
+main h2{
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 100;
+    text-align: left;
+    font-size: 36px;
+    color: #fff;
+}
+
+main div{
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 100;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* main nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+main nav ul li {
+    width: 190px;
+    height: 190px;
+    margin: 40px 10px;
+}
+
+main nav ul li img {
+    width: 190px;
+    height: 190px;
+} */
+
+/* main p {
+    display: flex;
+    justify-content: center;
+} */
+
+/* main iframe {
+    width: 608px;
+    height: 342px;
+    margin: 16px;
+    margin-top: 10px;
+} */
+
+aside {
+    width: 270px;
+    padding: 20px;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+    background-color: #555
+}
+
+aside nav h2 {
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 100;
+    text-align: left;
+    font-size: 36px;
+    color: #fff;
+}
+
+aside nav ul {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    padding: 0px;
+}
+
+aside nav ul li {
+    width: 220px;
+    overflow: hidden;
+    margin: 20px 10px;
+    padding: 10px;
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 100;
+    text-align: left;
+    font-size: 26px;
+    color: #fff;
+}
+
+aside nav ul li a span{
+    display: block;
+    width: 190px;
+    border: 3px solid #333;
+    border-radius: 10px 5px 20px 5px;
+    padding: 5px 10px;
+}
+
+aside nav ul li a span:hover{
+    background-color: #222;
+}
+
+/* aside nav ul li img {
+    width: 220px;
+    height: 60px;
+} */
+
+footer {
+    height: 60px;
+    margin-top: 20px;
+    padding: 10px;
+    font-family: "Do Hyeon", sans-serif;
+    text-align: center;
+    font-size: 23px;
+    color: #fff;
+    background-color: #000;
+}
+
+footer p {
+    margin-top: 10px;
+}

@@ -1,0 +1,35 @@
+.number { 
+    margin-bottom: 8px;
+}
+.number label{ 
+    display: inline-block; 
+    width:68px;}
+
+img{ 
+    width:300px; 
+    height:200px; 
+    margin-right: 5px;
+}
+img:hover{ 
+    opacity: 0.6;
+}
+
+#gugudan table { 
+    border-collapse: collapse;
+    margin:20px;
+    float:left;
+    border:1px solid #ccc;
+}
+#gugudan th {
+    border:1px solid #ccc;
+    border-collapse:collapse;
+}
+#gugudan th, #gugudan td { 
+    padding:10px 15px;
+}
+#gugudan th { 
+    background:#eee;
+}		
+#gugudan td { 
+    border:1px dotted #222;
+}

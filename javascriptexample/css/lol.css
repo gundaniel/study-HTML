@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.do-hyeon-regular {
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    background-color: #000;
+}
+
+body {
+    color: black;
+    text-align: center;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #252525
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 940px;
+    height: 260px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header h1 img {
+    height: 340px;
+    margin-top: -40px;
+}
+
+body>div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-start;
+}
+
+main {
+    display: block;
+    width: 640px;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+    background-color: #555
+}
+
+main nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+main nav ul li {
+    width: 190px;
+    height: 190px;
+    margin: 40px 10px;
+}
+
+main nav ul li img {
+    width: 190px;
+    height: 190px;
+}
+
+main nav ul li img:hover {
+    opacity: 0.6;
+}
+
+main p {
+    display: flex;
+    justify-content: center;
+}
+
+main iframe {
+    width: 608px;
+    height: 342px;
+    margin: 16px;
+    margin-top: 10px;
+}
+
+aside {
+    width: 270px;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+    background-color: #555
+}
+
+aside nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    padding: 15px;
+}
+
+aside nav ul li {
+    width: 220px;
+    height: 100%;
+    overflow: hidden;
+    margin: 20px 10px 10px 10px;
+    font-family: "Black Han Sans", sans-serif;
+    text-align: center;
+    font-size: 56px;
+    color: #fff;
+}
+
+aside nav ul li:hover {
+    opacity: 0.6;
+}
+
+aside nav ul li img {
+    width: 220px;
+    height: 60px;
+    /* margin: 20px 0px; */
+}
+
+footer {
+    height: 60px;
+    margin-top: 20px;
+    padding: 10px;
+    font-family: "Do Hyeon", sans-serif;
+    text-align: center;
+    font-size: 23px;
+    color: #fff;
+    background-color: #000;
+}
+
+footer p {
+    margin-top: 10px;
+}
