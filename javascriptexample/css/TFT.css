@@ -102,8 +102,13 @@ main h2{
     text-align: left;
     font-size: 36px;
     color: #fff;
+    text-align: center;
 }
 
+main h3{
+    text-align: left;
+    color: white;
+}
 main div{
     font-family: "Do Hyeon", sans-serif;
     font-weight: 100;
@@ -112,6 +117,28 @@ main div{
     color: #fff;
 }
 
+
+div#sang{
+    width: 600px;
+    height: 500px;
+    background-image: url(../images/sangsing.png);
+    border: 2px solid white;
+}
+
+#sang:hover{
+
+    width: 600px;
+    /* height: 500px; */
+    box-sizing: border-box;
+    background-image: url(../images/sangsing2.png) !important;
+ 
+ }
+
+ div#bor1{
+    margin: 10px 0px 10px 0px;
+    width: 600px;
+   border: 2px solid white;
+ }
 /* main nav ul {
     display: flex;
     justify-content: space-around;
