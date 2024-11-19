@@ -8,7 +8,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/ARAM.css">
+    <style>
+        mark {
+            background-color: red;
+        }
 
+        .highlight {
+            color: rgb(162, 204, 241);
+        }
+
+        img {
+            width: 406px;
+        }
+
+        .gold {
+            color: gold;
+        }
+
+        .list{
+            color: rgb(159, 197, 53);
+        }
+    </style>
 </head>
 
 <body>
@@ -16,18 +36,134 @@
         <h1><a href="lol.html"><img src="../images/lol-logo-rendered-hi-res.png" alt="롤 로고"></a></h1>
         <nav>
             <ul>
-                <a href="Summoner's Rift.html"><li>소환사의 협곡</li></a>
-                <a href="ARAM.html"><li>칼바람 나락</li></a>
-                <a href="TFT.html"><li>전략적 팀 전투</li></a>
+                <a href="Summoner's Rift.html">
+                    <li>소환사의 협곡</li>
+                </a>
+                <a href="ARAM.html">
+                    <li>칼바람 나락</li>
+                </a>
+                <a href="TFT.html">
+                    <li>전략적 팀 전투</li>
+                </a>
             </ul>
         </nav>
     </header>
 
     <div>
         <main>
-            <h2>협곡</h2>
+            <h2>소환사의 협곡 (일반)</h2>
+            <br />
             <div>
-                1
+                <h4>
+                    소환사의 협곡
+                    <hr />
+                    Summoner's Rift
+                </h4>
+                <img id="rift_1" src="../images/Rift/맵.png" style="width: 600px;" alt="협곡">
+                <p>리그오브레전드의 가장 기본적인 맵으로 상징적인 맵중 하나입니다. <br />
+                    항상 5:5 이며 시작 레벨은 1 시작시 골드는500G 입니다. <br />
+                    형성되는 라인은 탑,정글,미드,원딜,서폿이며 <br />
+                    평균 게임 시간은 15~30분 정도입니다.
+                </p>
+                <br />
+                <hr />
+                <br />
+                <div class="link">
+                    <h2 id="목차">목차</h2>
+                    <a id="1" href="#픽"><span class="list">1. 픽 (챔피언 선택 방식)</span></a> <br />
+                    <a id="2" href="#구조물"><span class="list">2. 구조물</span></a> <br />
+                    <a id="3" href="#오브젝트"><span class="list">3. 오브젝트</span></a> <br />
+                </div>
+                <br />
+                <hr />
+                <br />
+                <h2 id="픽"><a href="#목차"><span class="list">1.</span></a> 픽</h2>
+                <br />
+                <p>
+                    수락화면에서 픽 화면으로 넘어갈때 빠른 타자속도와 선점을 하는것이 가장 중요합니다 <br />
+                    주요 단어로는 본인이 가고싶은 라인의 초성을 <mark>누구보다 빠르게</mark> 채팅을 치셔야합니다. <br />
+                    ex) ㅌ, ㅁㄷ <br /><br />
+                    ★ tip ★ 상대방 컴퓨터 사양에 따라 못 볼 수도 있으니 도배는 필수
+                    <img src="../images/Rift/일반 선픽.png" alt="선픽"> <br /><br />
+                    만일 선픽 싸움에서 먼저 라인을 선택하지 못 하였다면... 다른 라인을 가셔야 합니다.<br /><br />
+                </p>
+                <br />
+                <hr />
+                <br />
+                <h2 id="구조물"><a href="#목차"><span class="list">2. </span></a>구조물</h2><br />
+
+                <h4 id="타워"><a href="#목차"><span class="list">2-1.</span> 타워</h4>
+                <img src="../images/Rift/타워.png" alt=""><br /><br />
+                <p>
+                    가장 많이 보게 될 타워입니다 우선 상당한 공격력을 가지고있습니다
+                    <br />
+                    1차포탑, 2차포탑, 3차포탑 (억제기포탑), 4차포탑(쌍둥이 포탑) 까지 총 갯수 5개이며
+                    <br />
+                    추후에 설명할 <a href="#미니언"><span class="list">미니언</span></a>을 방패 삼아 조금씩 갉아 먹어야 하는 구조물중 하나입니다.
+                    <br /><br />
+                </p>
+
+                <h4 id="억제기"><a href="#목차"><span class="list">2-2.</span> 억제기</h4>
+                <img src="../images/Rift/억제기.png" alt=""><br /><br />
+                <p>
+                    파괴시 후술할 <a href="#슈퍼미니언"><span class="list">슈퍼미니언</span></a> 및 쌍둥이타워 더 나아가 승리를 위한 넥서스를 타격 할 수
+                    있는 <br />
+                    억제기입니다. 공격은 하지 않으며 3차타워를 파괴해야 타격할 수 있습니다. <br /><br />
+                    시간이 지나면 재생성 되며 억제기 재생성 시간은 게임 진행 시간에 비례합니다. <br />
+                    게임이 시작하고 13분 안에 억제기가 파괴될 경우 4분 뒤에 재생성됩니다. <br />
+                    게임이 시작하고 13분~18분 사이에 억제기가 파괴되면 5분 뒤에 재생성됩니다. <br />
+                    게임이 시작하고 18분 뒤에 억제기가 파괴되면 6분 뒤에 재생성됩니다.
+                </p>
+                <br />
+                <h4><a href="#목차"><span class="list">2-3.</span> 넥서스</h4>
+                <img src="../images/Rift/넥서스.png" alt=""><br /><br />
+                <p>
+                    파괴시 최종 승리를 위한 상대방의 넥서스입니다. <br />
+                    앞서 본 억제기와 쌍둥이 타워를 제거해야만 파괴할 수 있으며 <br />
+                    해당 건물이 마지막 건물인 만큼 상대가 거세게 저항합니다.
+                </p>
+                <br />
+                <hr />
+                <br />
+                <h2 id="오브젝트"><a href="#목차"><span class="list">3.</span></a> 오브젝트</h2> <br />
+                <p>
+                    오브젝트의 경우 선공몹 과 비선공몹으로 나뉩니다. <br />
+                    일반 페이지에선 가장 많이 볼 선공몹인 미니언만 다루며 <br />
+                    비선공 몹(정글몹)의 경우 보다 자세한 사항은 <a href="../html/Summoner's Rift_2.html"><span
+                            class="list">랭크</span></a> 페이지에서 다루겠습니다. <br /> <br />
+                </p>
+
+                <h4 id="미니언"><a href="#목차"><span class="list">3-1.</span> 근거리 미니언</h4>
+                <img src="../images/Rift/근거리미니언.png" alt=""><br /><br />
+                <p>
+                    <a href="#타워"><span class="list">타워</span></a>를 철거하기 위한 가장 기본적인 미니언인 근거리 미니언입니다.<br />
+                    한라인당 3마리씩 소환되며 공격속도가 매우 빠르며 원거리 미니언보다 단단합니다 <br />
+                    처치시 <span class="gold">보통량의 골드</span>와 경혐치를 지급합니다. <br /><br />
+                </p>
+                <h4><a href="#목차"><span class="list">3-2.</span> 원거리 미니언</h4>
+                <img src="../images/Rift/원거리 미니언.png" alt=""> <br /><br />
+                <p>
+                    근거리 미니언과 같이 기본적인 원거리 미니언입니다. 한라인당 3마리씩 소환되며<br />
+                    공격속도는 조금 느린편 이지만 공격력이 조금 센 편입니다 <br />
+                    처치시 근거리 미니언보다 상대적으로 <span class="gold">적은량의 골드</span>와 경험치를 를 지급합니다. <br /><br />
+                </p>
+                <h4><a href="#목차"><span class="list">3-3.</span> 대포 미니언</h4>
+                <img src="../images/Rift/대포미니언.png" alt=""><br /><br />
+                <p>
+                    3번째 라인마다 소환되는 대포 미니언입니다. 한라인당 1마리씩 소환되며 <br />
+                    공격속도는 매우 느린편이지만 방어력이 준수하며 공격력이 상당히 강한편입니다 <br />
+                    처치시 <span class="gold">많은량의 골드</span>와 경험치를 지급합니다. <br /><br />
+                </p>
+                <h4 id="슈퍼미니언"><a href="#목차"><span class="list">3-4.</span> 슈퍼 미니언</h4>
+                <img src="../images/Rift/슈퍼미니언.png" alt=""><br /><br />
+                <p>
+                    앞서 나온 <a href="#억제기"><span class="list">억제기</span></a>를 파괴하면 나오는 최상위 미니언 <br />
+                    공격력과 방어력이 앞서나온 모든 미니언보다 강력하며 <br />
+                    못큰 챔피언은 1:1을 질 수도 있다. <br />
+                    <span class="gold">매우 많은량의 골드</span>와 경험치를 지급하며 <br />
+                    쌓이면 매우 위험하니 처치순위 1순위 입니다.
+                </p>
+
             </div>
         </main>
         <aside>
@@ -36,8 +172,8 @@
                     <h2>소환사의 협곡</h2>
                 </label>
                 <ul>
-                    <li><a href="../html/ARAM.html"><span>asdfsdf</span></a></li>
-                    <li><a href="../html/ARAM_2.html"><span>sfdasfds</span></a></li>
+                    <li><a href="../html/Summoner's Rift.html"><span>1. 일반</span></a></li>
+                    <li><a href="../basic/Summoner's Rift_2.html"><span>2. 랭크</span></a></li>
                 </ul>
             </nav>
         </aside>

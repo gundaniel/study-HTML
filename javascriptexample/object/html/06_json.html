@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <style type="text/css">
+
+    </style>
+
 </head>
 
 <body>
@@ -34,18 +39,46 @@
             */
 
         // 2. 객체 리터럴을 생성하는 방법
-        const user = {
-            name: "홍길동",
-            hobby: ["여행", "영화"],
-            greeting: function () {
-                document.write("안녕하세요 나의 이름은" + this.name + "입니다.<bt/>")
+        /*
+         const user = {
+             name: "홍길동",
+             hobby: ["여행", "영화"],
+             greeting: function () {
+                 document.write("안녕하세요 나의 이름은" + this.name + "입니다.<br/>")
+             }
+         };
+         
+         document.write("<h3>객체 리터럴을 이용하는 방법</h3>")
+         user.greeting();
+         for (let h of user.hobby) { //확장된 FOR문과 비슷함 (배열일시 사용) 
+             document.write(h + " ");
+         }
+         */
+        /*
+        const unit = {
+            attack(weapon){
+                return `나는 게임에서 ${weapon}으로 공격한다.`;
             }
-        };
-        document.write("<h3>객체 리터럴을 이용하는 방법</h3>")
-        user.greeting();
-        for (let h of user.hobby) { //확장된 FOR문과 비슷함 (배열일시 사용) 
-            document.write(h + " ");
         }
+        document.write(`<h3>unit 객체 메서드 축약형</h3>
+                            ${unit.attack("주먹")}<br/>
+                            ${unit.attack("총")}`);
+
+
+        const user = {
+            id : "nodeuser",
+            pw : "node1234",
+            name : "홍길동",
+            mobile : "010-1324-5678",
+            country : "대한민국"
+        }
+        
+        document.write("<h3>for...in으로 출력</h3>");
+        for(let info in user){
+            document.write(`${info} : ${user[info]} <br/>`);
+        }
+        */
+
 
         /* 객체 리터럴 예제
 
@@ -72,38 +105,99 @@
                         ${word.girl} <br/>
                         ${word.friend} <br/>`);                
         */
-                        /*
+        /*
         // 3. 생성자 함수를 이용하는 방법
         function User(name, hobby){
-            this.name = name;
-            this.hobby = hobby;
-            this.greeting = function(){
-                document.write("안녕하세요 나의 이름은" + this.name + "입니다.<bt/>")
-            }
+        this.name = name;
+        this.hobby = hobby;
+        this.greeting = function(){
+        document.write("안녕하세요 나의 이름은" + this.name + "입니다.<bt/>")
+        }
         } 
         document.write("<h3>생성자 함수를 이용하는 방법</h3>")
         // user객체를 생성하는데 new를 활용해 생성자 호출
         let user = new User("홍길동",["여행","영화"]);
         user.greeting();
 
+
         //ES6(ECMAscript 6) 클래스를 이용하는 방법
         class User{
-            //User 생성자 함수와 상응
-            constructor(name, hobby){
-                this.name = name;
-                this.hobby = hobby;
-            }
-            greeting(){
-                document.write("안녕하세요 나의 이름은" + this.name + "입니다.<bt/>")\
-            }
+        //User 생성자 함수와 상응
+        constructor(name, hobby){
+        this.name = name;
+        this.hobby = hobby;
         }
-         document.write("<h3>ES6 클래스를 이용하는 방법</h3>")
+        greeting(){
+        document.write("안녕하세요 나의 이름은" + this.name + "입니다.<bt/>")\
+        }
+        }
+        document.write("<h3>ES6 클래스를 이용하는 방법</h3>")
         let user = new User("홍길동",["여행","영화"]);
         user.greeting();   
-            
         */
 
+        // 클래스 예제
+        /* 클래스 선언문
+        class Coffee {
+        constructor() {
+                this.name = "Americano";
+            }
+            getName(){
+                return this.name;
+            }
+            setName(){
+                this.name = name;
+            }
+            display(){ //!콘솔로 출력을 위한 메서드
+                console.log(this.name);
+            }
+        }
+
+        let coffee = new Coffee();
+        document.write(`<h3>coffee 클래스 선언문 </h3>
+                        ${coffee.name} <br />
+                        ${coffee.getName()}`);
+                        coffee.display();
+                        */
+
+        /*!클래스 표현식*/
+        let Coffee = class {
+            constructor() {
+                this.name = "Americano";
+            }
+            getName() {
+                return this.name;
+            }
+            setName() {
+                this.name = name;
+            }
+            display() { //!콘솔로 출력을 위한 메서드
+                console.log(this.name);
+            }
+        };
+
+        let coffee = new Coffee();
+        document.write(`<h3>coffee 클래스 선언문 </h3>
+                        ${coffee.name} <br />
+                        ${coffee.getName()}`);
+                        coffee.display();
+
+        
+                        
+
+
+        
+                    
+
+        
+
+
+
     </script>
+
+    
+
+
 </body>
 
 </html>

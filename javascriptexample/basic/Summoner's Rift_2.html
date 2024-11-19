@@ -7,8 +7,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/Summoner's Rift.css">
+    <link rel="stylesheet" href="../css/ARAM.css">
+    <style>
+        mark {
+            background-color: red;
+        }
 
+        .highlight {
+            color: rgb(162, 204, 241);
+        }
+
+        img {
+            width: 406px;
+        }
+
+        .gold {
+            color: gold;
+        }
+
+        .list {
+            color: rgb(159, 197, 53);
+        }
+
+        .Iron {
+            color: rgb(78, 47, 0);
+        }
+
+        .Bronze {
+            color: rgb(139, 79, 0);
+        }
+
+        ul li {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .ad {
+            color: rgb(235, 96, 3);
+        }
+
+        .ap {
+            color: rgb(51, 51, 216);
+        }
+
+        .대형 {
+            color: rgb(255, 0, 0);
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .baron{
+            color: rgb(107, 23, 185);
+        }
+    </style>
 </head>
 
 <body>
@@ -16,18 +73,454 @@
         <h1><a href="lol.html"><img src="../images/lol-logo-rendered-hi-res.png" alt="롤 로고"></a></h1>
         <nav>
             <ul>
-                <a href="Summoner's Rift.html"><li>소환사의 협곡</li></a>
-                <a href="ARAM.html"><li>칼바람 나락</li></a>
-                <a href="TFT.html"><li>전략적 팀 전투</li></a>
+                <a href="Summoner's Rift.html">
+                    <li>소환사의 협곡</li>
+                </a>
+                <a href="ARAM.html">
+                    <li>칼바람 나락</li>
+                </a>
+                <a href="TFT.html">
+                    <li>전략적 팀 전투</li>
+                </a>
             </ul>
         </nav>
     </header>
 
     <div>
         <main>
-            <h2>협곡</h2>
+            <h2>소환사의 협곡 (랭크)</h2>
+            <br />
             <div>
-                2
+                <h4>
+                    소환사의 협곡
+                    <hr />
+                    Summoner's Rift
+                </h4>
+                <img id="rift_1" src="../images/Rift/랭크.png" style="width: 600px;" alt="협곡">
+                <p>
+                    랭크시스템에 오신것을 환영합니다. <br />
+                    30레벨부터 진행이 가능하며 랭크세부는 4단계로 나눠져 있습니다. <br />
+                    <mark>더욱 정교한 기술과 상황판단 능력을 요하며</mark> 자신의 한계를 시험할 수 있습니다.<br />
+                    해당 티어의 1티어 100점 에서 승리하게 되면 다음 단계로 넘어갈 수 있습니다! <br />
+                    ex) <span class="Iron">Iron</span> 1 -> <span class="Bronze">Bronze</span> 4
+                </p>
+                <br />
+                <hr />
+                <br />
+                <div class="link">
+                    <h2 id="목차">목차</h2>
+                    <a id="1" href="#픽"><span class="list">1. 픽 (챔피언 선택 방식)</span></a> <br />
+                    <ul>
+                        <a id="2" href="#라인"><span class="list">2. 라인별 주요 챔피언 (24.11.18기준)</span></a> <br />
+                        <li><a href="#탑"><span class="list">2-1.</span></a> 탑</li>
+                        <li><a href="#정글"><span class="list">2-2.</span></a> 정글</li>
+                        <li><a href="#미드"><span class="list">2-3.</span></a> 미드</li>
+                        <li><a href="#원딜"><span class="list">2-4.</span></a> 원딜</li>
+                        <li><a href="#서폿"><span class="list">2-5.</span></a> 서폿</li>
+                    </ul>
+                    <a id="3" href="#캠프"><span class="list">3. 캠프</span></a> <br />
+                    <a id="4" href="#대형오브젝트"><span class="list">◎4. 대형 오브젝트</span></a> <br />
+                    <ul>
+                        <li><a href="#용"><span class="list">4-1.</span></a> 드래곤</li>
+                        <li><a href="#유충"><span class="list">4-2.</span></a> 공허 유충</li>
+                        <li><a href="#전령"><span class="list">4-3.</span></a> 협곡의 전령</li>
+                        <li><a href="#바론"><span class="list">4-4.</span></a> 내셔남작</li>
+                    </ul>
+                </div>
+                <br />
+                <hr />
+                <br />
+                <h2 id="픽"><a href="#목차"><span class="list">1.</span></a> 픽</h2>
+                <br />
+                <img src="../images/Rift/픽 화면.png" alt=""><br /><br />
+                <p>
+                    이전의 주먹구구식 무지성 채팅과 다르게 라인을 선택할 수 있습니다. <br /><br />
+                </p>
+                <img src="../images/Rift/라인 선택.png" alt=""><br /><br />
+                <p>
+                    좌측부터 탑, 정글, 미드, 원딜, 서폿순이며 <br />
+                    가장 오른쪽의 상관없음은 <mark>★랜덤</mark>으로 배정되므로 주의하세요! <br />
+                    기본적으로 상대팀 5명 본인팀 5명의 챔피언을 <br />
+                    픽단계에서 제외하는 벤 시스템이 도입되어 있으며 <br />
+                    상대방 및 팀이 선택한 챔피언은 선택 할 수 없으므로 <br />
+                    <mark>★최소 20개</mark> 이상의 챔피언은 숙지 하고 있어야 합니다.
+                </p>
+                <br />
+                <hr />
+                <br />
+                <h2 id="라인"><a href="#목차"><span class="list">2. </span></a>라인별 주요 챔피언</h2><br />
+                <p>
+                    기본적으로 TOP6중 1가지 챔피언은 숙지가 된 상태여야합니다. <br />
+                    또한 <span class="ad">AD</span>(물리데미지), <span class="ap">AP</span>(마법데미지) 챔피언은 1개씩은 사용해야 할 줄 알아야하며
+                    <br />
+                    보다 높은곳으로 올라가고 싶다면 메타에 적응하여야 할 것 입니다.<br /><br />
+
+                </p>
+                <h4 id="탑"><a href="#목차"><span class="list">2-1.</span></a> 탑</h4>
+                <img src="../images/Rift/탑 챔프.png" alt=""> <br /><br />
+                <p>
+                    카운터를 맞으면 라인전 구도가 무너지는 라인이며 <br />
+                    기본적으로 체급이고 팀파이트시 선봉장에 서는 역할을 합니다. <br /><br />
+                    한타시 단단하고 CC(군중제어 효과)가 강력하거나 <br />
+                    상대방의 주의를 끌며 일대 다수에 강한 챔피언을 추천드립니다.<br /><br />
+
+                    카운터 중요도 : ★★★★★ <br />
+                    라인전 난이도 : ★★★☆☆ <br />
+                    운영 난이도 : ★★☆☆☆ <br />
+                    총합 접근 난이도 : 보통 <br /><br />
+                </p>
+                <h4 id="정글"><a href="#목차"><span class="list">2-2.</span></a> 정글</h4>
+                <img src="../images/Rift/정글 챔프.png" alt=""> <br /><br />
+                <p>
+                    기본적으로 초중반 우월한 상황판단력이 중요한 라인입니다 <br />
+                    후술 할 <a href="#오브젝트"><span class="list">비선공 오브젝트</span></a>의 컨트롤이 중요하며 <br />
+                    그와 동시에 갱(라인개입)을 통해 변수창출이 중요합니다 <br /><br />
+                    초반에 강력한 챔피언을 선택하여 활발한 갱이나 <br />
+                    정글몹을 먹으며 중후반 우월한 성장을 바탕으로 <br />
+                    상대를 압도하는 챔피언을 추천드립니다. <br /><br />
+
+                    카운터 중요도 : ★★★★☆ <br />
+                    라인전 난이도 : ★★★★★ <br />
+                    운영 난이도 : ★★★★★ <br />
+                    총합 접근 난이도 : 매우 어려움 <br /><br />
+                </p>
+                <h4 id="미드"><a href="#목차"><span class="list">2-3.</span></a> 미드</h4>
+                <img src="../images/Rift/미드 챔프.png" alt=""> <br /><br />
+                <p>
+                    기본적으로 탑이 <span class="ad">AD</span>챔피언을 선택한다면<br />
+                    <span class="ap">AP</span>챔피언 혹은 메이지라고 불리는 챔피언을 선택합니다.<br />
+                    맵의 중앙을 가로지르는 라인인 미드인만큼 피지컬 및 합류가 중요한 라인입니다.<br /><br />
+                    상대에게 폭발적인 광역 및 단일 데미지를 넣어 한타 및 소규모 교전시 <br />
+                    상대 팀에게 교전을 포기하게 하는 능력을 가진 파괴적인 라인입니다. <br /><br />
+
+                    카운터 중요도 : ★★★☆☆ <br />
+                    라인전 난이도 : ★★★★☆ <br />
+                    운영 난이도 : ★★★★☆ <br />
+                    총합 접근 난이도 : 어려움 <br /><br />
+                </p>
+                <h4 id="원딜"><a href="#목차"><span class="list">2-4.</span></a> 원딜</h4>
+                <img src="../images/Rift/원딜 챔프.png" alt=""> <br /><br />
+                <p>
+                    서포터와 2인 1조로 라인전을 진행합니다 전형적으론 <span class="ad">AD</span> 챔피언을 주로 다루며<br />
+                    상대적으로 긴사거리와 후반을 담당하는팀의 뒷심입니다.<br /><br />
+                    방어력이 약한만큼 탁월한 거리조절이 필요하며 미드에 버금가는 피지컬을 요합니다<br />
+                    초반에는 다소 약한 모습을 보이지만 지속적인 데미지로 후반을 지배하는 라인입니다.<br /><br />
+
+                    카운터 중요도 : ★★★☆☆ <br />
+                    라인전 난이도 : ★★★☆☆ <br />
+                    운영 난이도 : ★★★★☆ <br />
+                    총합 접근 난이도 : 어려움 <br /><br />
+                </p>
+                <h4 id="서폿"><a href="#목차"><span class="list">2-5.</span></a> 서폿</h4>
+                <img src="../images/Rift/서폿 챔프.png" alt=""> <br /><br />
+                <p>
+                    원딜과 2인 1조로 라인전을 진행합니다 주로 탱킹 및 변수창출로 <br />
+                    원딜을 보조하여 맵의 시야 장악 및 팀에게 도움을 주는 라인입니다. <br /><br />
+                    다른 라인들보다 상대적으로 난이도가 낮은편이며 초심자에게 주로 추천하는 라인입니다.<br />
+                    시야 장악과 상대방을 저지하는 CC(군중제어 효과)가 많은 챔피언을 추천합니다.<br /><br />
+
+                    카운터 중요도 : ★★☆☆☆ <br />
+                    라인전 난이도 : ★★☆☆☆ <br />
+                    운영 난이도 : ★★★☆☆ <br />
+                    총합 접근 난이도 : 쉬움 <br /><br />
+                </p>
+                <hr />
+                <br />
+                <h2 id="캠프"><a href="#목차"><span class="list">3. </span></a>오브젝트</h2><br />
+                <p>
+                    앞서 <a href="../html/Summoner's Rift.html"><span class="highlight">일반</span></a>에서 다루었던 선공몹과 다르게 비선공몹
+                    및 주요 오브젝트를 소개합니다. <br />
+                    주로 정글러가 컨트롤 하며 <a href="#대형오브젝트"><span class="대형">◎</span></a>4. 대형 오브젝트의 경우 정글러가 부재시 타격하지 않습니다.
+                </p>
+                <br />
+                <h4><a href="#목차"><span class="list">3-1.</span></a> 바위게</h4>
+                <img src="../images/Rift/바위게.png" alt=""><br />
+                ※바위게 사망 전 모습
+                <br /><br />
+
+                <img src="../images/Rift/바위게(사망).png" alt=""> <br />
+                ※바위게 사망시 버프 및 이속증가 상태<br /><br />
+                <p>
+                    최초 등장은 3:30초에 등장하며 2:30초 바다 리젠됩니다.<br />
+                    초반 정글러의 상대와 성장격차에 아주 중요한 비선공오브젝트입니다.<br /><br />
+                    강가에 서식하며 사망시 강가중앙의 시야와 함께<br />
+                    위로 지나갈 시 아군에게만 점차 사라지는 이동속도 증가 버프를 줍니다.<br /><br />
+                </p>
+
+                <h4><a href="#목차"><span class="list">3-2.</span></a> 두꺼비</h4>
+                <img src="../images/Rift/두꺼비.png" alt=""><br /><br />
+                <p>
+                    후술할 통칭 <span class="blue">블루</span>가 서식하는 지역에 존재하며<br />
+                    초반에 잡기 힘든 정글몹중 하나입니다.<br />
+                    전투시작시 강한 공격을 하나 점차 데미지가 줄어듭니다.<br /><br />
+                </p>
+
+                <h4 id="늑대"><a href="#목차"><span class="list">3-5.</span></a> 늑대</h4>
+                <img src="../images/Rift/늑대.png" alt=""><br /><br />
+                <p>
+                    두꺼비와 동일하게 <span class="blue">블루</span>가 서식하는 지역에 존재하며<br />
+                    초반에 상대적으로 잡기 쉬운 몹 중에 하나입니다.<br />
+                    <a href="#칼날부리"><span class="list">칼날부리</span></a>와 더불어 유일하게 1레벨에 전부 처치시 2레벨로 상승합니다.<br /><br />
+                </p>
+
+                <h4><a href="#목차"><span class="list">3-4.</span></a> <span class="blue">블루</span></h4>
+                <img src="../images/Rift/블루.png" alt=""><br /><br />
+                <p>
+                    통칭 <span class="blue">블루</span>(블루 버프)
+                    처치시 버프를 주는 몬스터중 하나입니다.<br />
+                    처치한 챔피언에게 마나재생력과 쿨타임 감소 효과를 부여하며<br />
+                    많은 경험치를 부여함으로 본인캠프 리젠시 처치순위 1순위입니다.<br /><br />
+                </p>
+
+                <h4><a href="#목차"><span class="list">3-5.</span></a> 돌거북</h4>
+                <img src="../images/Rift/돌거북.png" alt=""><br /><br />
+                <p>
+                    후술할 <span class="red">레드</span>가 서식하는 지역에 존재하며<br />
+                    계속 분열하여 초반에 잡기 힘든 정글몹중 하나입니다.<br />
+                    전투시작시 강한 공격을 하나 처치시 분열하며 데미지가 줄어듭니다.<br /><br />
+                </p>
+
+                <h4 id="칼날부리"><a href="#목차"><span class="list">3-6.</span></a> 칼날부리</h4>
+                <img src="../images/Rift/칼날부리.png" alt=""><br /><br />
+                <p>
+                    돌거북와 동일하게 <span class="red">레드</span>가 서식하는 지역에 존재하며<br />
+                    초반에 상대적으로 잡기 쉬운 몹 중에 하나입니다.<br />
+                    앞서 소개한<a href="#늑대"><span class="list"> 늑대</span></a>와 더불어 유일하게 1레벨에 전부 처치시 2레벨로 상승합니다.<br /><br />
+
+                </p>
+                <h4><a href="#목차"><span class="list">3-7.</span></a> <span class="red">레드</span></h4>
+                <img src="../images/Rift/레드.png" alt=""><br /><br />
+                <p>
+                    통칭 <span class="red">레드</span>(레드 버프)
+                    처치시 버프를 주는 몬스터중 하나입니다.<br />
+                    처치한 챔피언에게 체력재생력과 기본공격시 슬로우 및 도트데미지 효과를 부여하며<br />
+                    많은 경험치를 부여함으로 본인캠프 리젠시 처치순위 1순위입니다.<br /><br />
+                </p>
+                <hr />
+                <br />
+                <h2 id="대형오브젝트"><a href="#목차"><span class="대형">◎</span><span class="list">4. </span></a>대형오브젝트</h2><br />
+                <p>
+                    초반에 몇몇 챔피언을 제외하고 혼자 처치하기 힘드며<br />
+                    상대방의 개입시 뺐기면 치명적인 오브젝트입니다.<br /><br />
+                    
+                    반드시 정글러와 함께 처치를 요하는 오브젝트입니다.<br /><br />
+                </p>
+                
+                <h4 id="용"><a href="#목차"><span class="대형">◎</span><span class="list">4-1.</span></a> 드래곤</h4>
+                <img src="../images/Rift/용.png" alt=""><br/><br/>
+                <p>
+                    드래곤은 장로 용 제외 총 6가지의 형태를 가지며 처치시 각각 다른 효과를 부여합니다. <br />
+                    2번째 드래곤 처치시 3번째 드래곤의 테마로 전장이 바뀌게됩니다. <br /><br />
+                    드래곤을 한쪽팀이 먼저 4마리 처치시 해당 테마의 <span class="highlight">드래곤의 영혼</span>을 얻게 됩니다.<br />
+                    이는 매우 강력함으로 게임 승리에 큰 도움을 주게 될 것입니다.<br /><br />
+                </p>
+                <h4><a href="#목차"><span class="대형">◎</span><span class="list">4-1-1.</span></a>바람의 드래곤</h4>
+                <img src="../images/Rift/바람 용.png" alt="">
+                <p>
+                    다른 용들은 공격 속도가 모두 0.5이지만 바람의 드래곤은 공격 속도가 1으로, 타 용들보다 2배 빠르다.
+                    대신 공격력이 35으로 화염, 바다 용의 절반이고, 단일 대상 공격이다.
+                    버프 효과와 더불어서 게임 초반에 바람용을 더욱 기피하게 만드는 요소.
+                    겉보기에는 DPS가 동일해 보이지만
+                    실제로는 드래곤의 공격에는 기본적으로 현재 체력의 7%에 해당하는 온힛 데미지가 있기 때문에
+                    DPS가 다른 용보다 높아 초반에 잡기 가장 어려운 용이다. <br /><br />
+                    
+                    처치시 효과 : 둔화 저항과 전투에서 벗어나 있을 때 이동 속도 +5/10/15/20%<br /><br />
+                    <span class="highlight"> 바람 드래곤의 영혼</span> : 기본 지속 효과로 이동 속도가 20% 증가합니다. 
+                    궁극기를 사용하면 이동 속도가 6초간 추가로 50% 증가합니다. (재사용 대기시간 30초)<br /><br />
+                    
+                </p>
+                <h4><a href="#목차"><span class="대형">◎</span><span class="list">4-1-2.</span></a>대지의 드래곤</h4>
+                <img src="../images/Rift/대지 용.png" alt="">
+                <p>
+                    대지의 드래곤은 공격 속도가 화염이나 바다의 드래곤의 절반인 0.25이다.
+                    대신 공격력은 그들의 1.5배인 105이며, 기본 공격이 범위 피해를 입힌다.
+                    DPS는 다른 드래곤들의 75%에 불과하지만, 대신 방어력 및 마법 저항력이 다른 드래곤에 비해 높다.
+                    때문에 실질적으로 드래곤을 잡는 데 받는 총 피해량은 다른 드래곤들보다 조금 낮은 수준이며,
+                    잡는 시간이 오래 걸리기 때문에 초반에 몰래 솔용을 시도하는 데 가장 리스크가 큰 드래곤이다.<br /><br />
+                    
+                    처치시 효과 : 방어력 및 마법 저항력 +5/10/15/20%. <br /><br />
+                    <span class="highlight"> 대지 드래곤의 영혼</span> : 5초 동안 피해를 입지 않으면 220
+                    (+추가 공격력의 16%) (+주문력의 13%) (+추가 체력의 13%)의 피해를 흡수하는 보호막을 획득.<br /><br />
+                    
+                </p>
+                <h4><a href="#목차"><span class="대형">◎</span><span class="list">4-1-3.</span></a>화염의 드래곤</h4>
+                <img src="../images/Rift/화염 용.png" alt="">
+                <p>
+                    화염의 드래곤의 공격 속도는 0.5, 공격력은 70이다.
+                    또한 기본 공격이 대상 뒤의 부채꼴 모양 범위 내의 적들에게 광역 피해를 입힌다.
+                    솔용 시에는 바람의 드래곤보다 체력 관리가 용이하나,
+                    초반에 바텀 라이너들과 정글러가 함께 옹기종기 모여서
+                    화염용을 사냥할 때는 광역 피해가 거슬리는 요소로 작용한다.
+                    때문에 화염용을 잡을 때는 서로 다른 방향에 서서 광역 피해를 받지 않도록 유도하는 것이 좋다.<br /><br />
+                    
+                    처치시 효과 : 중첩마다 3%의 공격력 및 주문력을 얻습니다.<br /><br />
+                    <span class="highlight"> 화염 드래곤의 영혼</span> : 3초마다 다음 기본 공격 또는 공격 스킬이
+                    작은 광역 폭발을 일으켜 대상과 주변 적들에게 100 (+추가 공격력의 18%) (+주문력의 12%)
+                    (+추가 체력의 2%)의 적응형 피해를 입힙니다<br /><br />
+                </p>
+                <h4><a href="#목차"><span class="대형">◎</span><span class="list">4-1-4.</span></a>바다의 드래곤</h4>
+                <img src="../images/Rift/바다 용.png" alt="">
+                <p>
+                    바다의 드래곤의 공격 속도는 0.5, 공격력은 70이다.
+                    또한 기본 공격은 단일 대상 공격이며, 적중 대상에게 2초 동안 30%의 둔화 효과를 부여한다.
+                    때문에 상대 팀의 방해 없이 드래곤을 사냥할 경우 가장 잡기 쉬운 드래곤은 바다용이다.
+                    그러나 바다용 앞에서 교전이 벌어질 경우,
+                    바다용의 기본 공격에 묻는 둔화 효과가 변수를 창출할 수도 있다.
+                    또한 몰래 솔용을 시도하다가 적에게 발각될 경우 둔화 때문에 도주하기 힘들어지기에,
+                    상대 팀의 방해가 있을 경우 바다용은 가장 잡기 어려운 드래곤이 된다.<br /><br />
+                    
+                    처치시 효과 : 매 5초마다 잃은 체력의 2/4/6/8% 회복.<br /><br />
+                    <span class="highlight"> 바다 드래곤의 영혼</span> : 적 챔피언에게 피해를 입히면 4초에 걸쳐
+                    150 (+추가 공격력의 25%) (+주문력의 15%) (+추가 체력의 7%)의 체력 및 100
+                    (+최대 마나의 2.5%)의 마나를 회복합니다.
+                    미니언 또는 몬스터에게 피해를 입히면 해당 회복 효과의 30%가 발동됩니다.<br /><br />
+                </p>
+                <h4><a href="#목차"><span class="대형">◎</span><span class="list">4-1-5.</span></a>마법공학 드래곤</h4>
+                <img src="../images/Rift/마공 용.png" alt="">
+                <p>
+                    마법공학 드래곤은 기본 공격 속도와 대미지가 높고,
+                    4번째 공격마다 본인의 영혼 효과와 동일하게 연쇄 번개로 광역 피해를 입히고
+                    둔화시킨다. 모든 평타가 둔화인 바다의 드래곤만큼은 아니지만
+                    은근히 처치하기 까다로운 드래곤.<br /><br />
+                    
+                    처치시 효과 : 중첩마다 5의 스킬 가속 및 5%의 공격 속도 효과를 얻습니다.<br /><br />
+                    <span class="highlight"> 마법공학 드래곤의 영혼</span> : 8초마다 기본 공격이나 스킬로
+                    적에게 피해를 입히면 번개를 발사해 25~50롤아이콘-레벨의 피해를 입히고
+                    근거리 적과 원거리 적을 각각 45/35% (+추가 공격력 100당 3%) (+주문력 100당 1%) (+추가 체력 1000당 1%)
+                    둔화하며 둔화 효과는 2초에 걸쳐 사라집니다. 이후 번개는 근처 4명의 적에게 날아가 같은 피해를 주고
+                    둔화 효과를 적용합니다. 다른 대상에게 받은 둔화 효과는 중첩되며,
+                    원거리 적을 공격하면 둔화 효과가 더 느리게 해제됩니다.<br /><br />
+                </p>
+                <h4><a href="#목차"><span class="대형">◎</span><span class="list">4-1-6.</span></a>화학공학 드래곤</h4>
+                <img src="../images/Rift/화공 용.png" alt="">
+                <p>
+                    화학공학 드래곤은 드래곤의 현재 체력이 낮을수록 공격 속도가 빨라진다.
+                    따라서 다수가 빠르게 드래곤을 먹고 빠지는 버스트 상황에서는 문제가 되지 않으나
+                    이른 시간에 혼자 드래곤을 사냥하는 상황에서는 가장 잡기 어려운 드래곤이다.
+                    다른 용이라면 분명 잡는 견적임에도 불구하고 사냥하다가 처형당할 가능성이 있다.<br /><br />
+                    
+                    
+                    처치시 효과 : 중첩마다 6%의 강인함 및 6%의 체력 회복 및 보호막 효과를 얻습니다.<br /><br />
+                    <span class="highlight"> 화학공학 드래곤의 영혼</span> : 체력이 50% 이하일 때
+                    주는 피해가 11% 증가하고 받는 피해가 11% 감소합니다.<br /><br />
+                </p>
+                <h4><a href="#목차"><span class="대형">◎</span><span class="list">4-1-7.</span></a>장로 드래곤</h4>
+                <img src="../images/Rift/장로 용.png" alt="">
+                <p>
+                    어느 한 팀이 4번째 드래곤을 챙긴 이후, 즉 영혼을 획득한 이후에 등장합니다.
+                    해당 드래곤은 처치시 바로 효과가 생기며 해당 드래곤이 등장할시 게임중 가장 중요한
+                    키포인트 역할을 하는 드래곤으로 장로 버스트를 했다가 뺏기기라도 하면 영혼 따위로는
+                    감당할 수 없는 재앙이 펼쳐지니 성급한 트라이는 금물이다. <br /><br />
+                    
+                    <span class="highlight">드래곤의 성위</span>
+                    <li>포탑 이외의 대상을 공격할 때, 3초에 걸쳐 75~225의 고정 피해를 입힙니다. <br />(게임 시간 25분~45분에 따라)</li>
+                    <li>체력이 20% 이하인 적에게 피해를 입히면 0.5초 이후 장로의 화형 효과가 발동하며 적을 즉시 처치합니다. (재사용 대기시간 없음)</li>
+                    <li>지속시간: 2분 30초</li>
+                </p>
+                <br />
+                <h4 id="유충"><a href="#목차"><span class="대형">◎</span><span class="list">4-2. </span></a>공허 유충</h4>
+                <img src="../images/Rift/공허유충.png" alt="">
+                <p>
+                    게임 시작 뒤 6분에 상단 둥지에 3마리씩 생성된다.
+                    공격 방식은 물기와 공허 진드기 소환이 있으며,
+                    한 마리가 죽으면 나머지 개체는 죽지 않고 최대 체력의 25%+잃은 체력의 25%를
+                    회복하기 때문에 일반적인 광역 스킬로 유충 두 세마리를 동시에 처치하는 것은 불가능하다. <br /><br /> 
+                    
+                    공허 유충을 처치하면 모든 팀원이 포탑을 공격할 때
+                    추가 고정 피해를 입히는 버프를 영구히 제공받는다.
+                    고정 피해량은 공허 유충을 처치한 수에 비례한다. <br /><br />
+                    공허 유충을 <span class="highlight">4마리</span> 잡으면 타워를 공격할때 공허 진드기가 소환되고<br />
+                    <span class="highlight">6마리</span>를 잡으면 두 마리씩 소환된다.<br /><br />
+                </p>
+                
+                <h4 id="전령"><a href="#목차"><span class="대형">◎</span><span class="list">4-3. </span></a>협곡의 전령</h4>
+                <img src="../images/Rift/전령.png" alt="">
+                <p>
+                    출몰 시간은 게임 시작 후 14분 뒤이며, 게임 내에서 단 한번만 생성된다. <br />
+                    19:45가 되면 완전히 사라지고 그 이후로 재출몰하지 않는다.<br /><br />
+                    
+                    <li>공략법
+                        <br />후방의 눈을 기본 공격당하면 최대 체력의 12%에 해당하는 고정 피해를 입습니다.<br />
+                        전령의 눈을 공격당하면 10초 동안 눈을 감습니다.<br />
+                        챔피언의 기본 공격은 눈을 감는 시간을 2.5초만큼 줄입니다.<br />
+                        3초 이내에 눈을 떴거나 체력이 15% 이하면 눈을 뜨지 않습니다.<br /><br />
+                    </li>
+                    <li><br />체력이 65.75% 그리고 32.75%일 때<br />
+                        공격력의 300%만큼 물리 피해를 주는 휘두르기 공격을 합니다.<br /><br />
+                    </li>
+                    <li><br />
+                        협곡의 전령은 모든 군중 제어기에 면역입니다.
+                    </li><br /><br />
+
+                    처치 보상 : 전령의 눈 <br /><br />
+                    <span class="highlight">보유 시:</span> 귀환이 강화되며 사용 전이나 전령의 눈의 <br />
+                    지속 시간이 끝나기 전까지 지속됩니다. <br /><br />
+                    <span class="highlight">사용 시:</span> 1초 동안 정신 집중 후 전령의 눈을 소비하여 협곡의 전령을 소환합니다. <br />
+                    소환된 전령은 근처 공격로로 이동하여 적 포탑을 공격합니다.
+                </p>
+                <br />
+                <br />
+                <h4 id="바론"><a href="#목차"><span class="대형">◎◎◎◎◎</span><span class="list">4-4. </span></a>내셔 남작</h4>
+                <img src="../images/Rift/바론.png" alt="">
+                <p>
+                    처치 보상으로 남작의 도움이라는 강력한 버프를 살아있는 아군 챔피언 모두에게 <br />
+                    부여함으로써 게임을 유리하게 이끌 수 있는 중요한 역할을 한다. <br /><br />
+                    비슷한 옵젝인 장로 드래곤의 경우 바론보다 잡기 쉽고, <br />
+                    전투능력에 치중 했다면 바론은 실질적 게임의 승리유무인 넥서스파괴 즉, <br />
+                    라인관리와 관련한 버프를 주기에 유리한팀에게는 굳히기를,<br />
+                    불리한 팀에게는 게임 체인저의 수단이 된다.<br /><br />
+                    그렇기에 수적으로 밀려도, 혈혈단신으로 둥지에 들어가 목숨을 내주고<br />
+                    바론을 스틸하는 줄타기 전략을 구사하기도 한다.<br /><br />
+
+                    처치시 효과 : <span class="baron">남작의 도움</span><br /><br />
+                    <div class="baron1"><img src="../images/Rift/바론버프 1.png" width="200px" alt=""></div>
+                    <li> <br />
+                        내셔 남작이 처치되면 내셔 남작을 처치한 팀에서 살아있는 모든 팀원들은<br />
+                        <span class="baron">남작의 도움</span> 이라는 버프를 받는다.<br />
+                        180초 동안 유지되며 버프가 유지되는 중 사망 시 즉시 소멸된다.<br /><br />
+                    </li>
+
+                    <li><br />
+                        <span class="ad">공격력</span>과 <span class="ap">주문력</span> 수치 증가.<br />
+                        내셔 남작이 처치되는 시간에 따라 강화 수치가 결정된다.<br /><br />
+                        <img src="../images/Rift/바론버프 2.png" alt="">
+                    </li><br />
+                    <li><span class="baron">강화된 귀환 (Empowered Recall)</span><br />
+                        <img src="../images/Rift/바론버프 3.png" alt=""><br />
+                    귀환을 강화해 정신 집중 시간을 반으로 줄인다. 기존 8초 -> 4초
+                    <br /><br />
+                    </li> 
+                    <li><br />
+                        <a href="../html/Summoner's Rift.html"#미니언><span class="list">미니언</span></a> 강화<br /><br />
+                        <ul>
+                        <li><span class="list">모든 미니언</span></li>
+                        <p>
+                            모든 미니언이 광역, 지속 피해를 75%만큼 덜 받게 된다.(슈퍼 미니언 제외)
+                        </p><br />
+                        <li><span class="list">근거리 미니언</span></li>
+                        <p>
+                            적 미니언이나 포탑이 거리 800 안에 있으면 이동 속도가 50% 증가.<br />
+                            크기가 30% 커짐, 공격 사거리 75 증가.
+                            챔피언에게 받는 피해가 20~40분에서 50~70% 감소. (30분 기준 58% 감소.)
+                        </p><br />
+                        <li><span class="list">원거리 미니언</span></li>
+                        <p>
+                            공격력 20 증가. 투사체 50% 가속. 사거리 100 증가.<br />
+                            챔피언에게 받는 피해가 20~40분에서 50~70% 감소. (30분 기준 58% 감소.)
+                        </p><br />
+                        <li><span class="list">대포 미니언</span></li>
+                        <p>
+                            공격 사거리 750 증가. 공격력 50 증가하지만 공격 속도 50% 감소.<br />
+                            범위 200의 광역 피해를 입힘, 건물에 1.5배의 피해를 입힘. 크기 30% 증가.
+                        </p><br />
+                        <li><span class="list">슈퍼 미니언</span></li>
+                        <p>
+                            공격 속도 25% 증가,<br />
+                            적 미니언이나 포탑이 거리 800 안에 있을 경우 이동 속도 50% 증가. 크기 15% 증가
+                        </p><br />
+                        </ul>
+                    </li>
+                </p>
             </div>
         </main>
         <aside>
@@ -36,8 +529,8 @@
                     <h2>소환사의 협곡</h2>
                 </label>
                 <ul>
-                    <li><a href="../html/Summoner's Rift.html"><span>asdfsdf</span></a></li>
-                    <li><a href="../html/Summoner's Rift_2.html"><span>sfdasfds</span></a></li>
+                    <li><a href="../html/Summoner's Rift.html"><span>1. 일반</span></a></li>
+                    <li><a href="../html/Summoner's Rift_2.html"><span>2. 랭크</span></a></li>
                 </ul>
             </nav>
         </aside>
