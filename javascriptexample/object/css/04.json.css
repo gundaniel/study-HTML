@@ -1,0 +1,19 @@
+table{
+width: 500px;
+    border: 2px solid black; 
+    border-collapse: collapse;
+}
+
+caption{
+    text-align: right;
+}
+
+th,td{
+    border: 1px solid #000;
+text-align: center;
+}
+
+td.text-left{
+    text-align: left;
+    text-indent:5px;
+}

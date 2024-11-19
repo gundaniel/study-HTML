@@ -139,6 +139,11 @@ div#sang{
     width: 600px;
    border: 2px solid white;
  }
+
+ iframe{
+    margin: auto;
+ }
+
 /* main nav ul {
     display: flex;
     justify-content: space-around;

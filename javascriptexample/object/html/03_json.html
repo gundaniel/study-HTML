@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       /* let keyword_rank = {
+            "title": "인기 검색어 순위",
+            "rank1": {
+                "keyword": "HTML5",
+                "s": "+",
+                "v": 178
+            },
+            "rank2": {
+                "keyword": "CSS3",
+                "s": "new ",
+                "v": 150
+            },
+            "rank3": {
+                "keyword": "jQuery",
+                "s": "+",
+                "v": 135
+            }
+        };
+
+        let tag = "<h1>"+keyword_rank.title+"</h1><ul>";
+				tag += "<li>" + keyword_rank.rank1.keyword 
+					+ "(" + keyword_rank.rank1.s + keyword_rank.rank1.v + ")</li>";
+				tag += "<li>" + keyword_rank.rank2.keyword 
+					+ "(" + keyword_rank.rank2.s + keyword_rank.rank2.v + ")</li>";
+				tag += "<li>" + keyword_rank.rank3.keyword 
+					+ "(" + keyword_rank.rank3.s + keyword_rank.rank3.v + ")</li>";
+				tag += "</ul>"; 
+			
+			// 구성한 내용을 화면에 출력(각각의 하위 객체명으로 명시하였을 때)
+			document.write(tag); */
+
+			 //배열을 선언하고 하위 데이터 요소로서 JSON을 포함 
+			let keyword_rank = {
+					"title":"인기 검색어 순위",
+					"rank": [
+								{ "keyword" : "HTML5", "s" : "+", "v" : 178 },
+								{ "keyword" : "CSS3", "s" : "new ", "v" : 150 },
+								{ "keyword" : "jQuery", "s" : "+", "v" : 135 }
+							]
+			};
+			//keyword_rank.rank[0].keyword로 접근.
+			let tag = "<h1>" + keyword_rank.title + "</h1><ul>";
+			for (let i = 0; i < keyword_rank.rank.length; i++) {
+				let rank = keyword_rank.rank[i]; // 이 부분이 존재하지 않는다면
+				tag += "<li>" + rank.keyword ;   // keyword_rank.rank[i].keyword로 명시되어야 한다
+				tag += "(" + rank.s + rank.v +")</li>";
+			}
+			tag += "</ul>";
+			
+			// 구성한 내용을 화면에 출력
+			document.write(tag); 
+			
+		</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -18,7 +18,6 @@ function add(){
 
     // let result = document.getElementById("result");
     // result = parseInt(num1) + parseInt(num2);
-
 }
 
 function sum(num1, num2){
@@ -67,7 +66,6 @@ console.log(str);
 document.getElementById("btn2-1").addEventListener("click", () => {
     alert("화살표 함수 기본 형태 입니다.");
 });
-
 // 2. 매개변수 1개 : 매개변수 => {}
 document.getElementById("btn2-2").addEventListener("click", e => {
     console.log(e.target.id);
@@ -75,14 +73,14 @@ document.getElementById("btn2-2").addEventListener("click", e => {
 })
 // fn = num =>  num * 5
 function printConsole(fn){ // 매개변수로 함수가 전달됨
-    //console.log( fn(2) );
+    // console.log( fn(2) );
     console.log( fn("홍길동", 20) );
 }
 
 // 3. {}, return 생략
 document.getElementById("btn2-3").addEventListener("click", () => {
     // 함수 호출(익명 함수)
-    //printConsole( function(num){ return num * 10} );
+    printConsole( function(num){ return num * 10} );
 
     // 함수 호출(화살표 함수)
     //printConsole( num =>  num * 5);
@@ -97,15 +95,21 @@ document.getElementById("btn2-3").addEventListener("click", () => {
 
 // this(이벤트가 발생한 요소) 사용 불가
 // 1) 익명 함수는 this 사용 가능
-document.getElementById("btn2-4").addEventListener("click", function(){
-    this.style.backgroundColor = "pink";
-})
+// document.getElementById("btn2-4").addEventListener("click", function(){
+    // this.style.backgroundColor = "pink";
+// });
 
 // 2) 화살표 함수는 this 사용 불가
-document.getElementById("btn2-4").addEventListener("click", (e)=>{
+document.getElementById("btn2-4").addEventListener("click", (e) => {
     // 화살표 함수에서 this는 창 자체를 나타내는 객체(window)이다.
     console.log(e.target);
 
     //this.style.color = "white"; // 글자색 변경
     e.target.style.color = "white"; // 글자색 변경
 })
+
+// 이벤트를 줄 id , 이벤트발생방법, 함수(function 생략가능 = =>대체가능)
+    document.getElementById("fontChange").addEventListener("click",function(){ //이벤트 발생하는 버튼을 가져옴
+        const fontColor = document.getElementById("fontColor").value; //색상을 변경하는 이벤트를 가져옴
+        document.getElementById("bicycle").style.color = fontColor; //적용해줄 id를 가져옴
+    });

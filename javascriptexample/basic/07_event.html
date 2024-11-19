@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/07_event.css">
+    <title>07_event.html</title>
+</head>
+
+<body>
+    <h1> 이벤트(Event)</h1>
+
+    <pre>
+        이벤트(Event):동작, 행위
+        ->브라우저에서읟 동작, 행위: click, keydown, keyup, mouseover, submit,change ...
+
+        이벤트 리스너(Event Listner)
+        ->이벤트가 발생하는 것을 대기하고 있다가
+        이벤트가 발생하는 거싱 감지 되면 연결된 기능을 수행하는 것
+        ex) onclick, onkeyup,onchange, onsubmit...(on이벤트명)
+        onclick="함수명()"
+
+        이벤트 핸들러 (Event Handler)
+        -> 이벤트 리스너에 연결된 기능으로
+        이벤트 발생을 수행하고자 하는 내용을 작성해둔 함수(function)
+    </pre>
+    <hr />
+
+    <h3>인라인 이벤트 모집</h3>
+    <pre>
+        요소 내부에 이벤트를 작성하는 바업븡로 
+        on이벤트명 - 함수명 () 형태로 작성함
+    </pre>
+
+    <button type="button" onclick="test1(this)">인라인 이벤트 모델 확인</button>
+    <pre>
+        색상명 클릭
+    </pre>
+    <ul id="divBg">
+        <li><a href="#" onclick="changeBg('green')" onmouseover="changeBg('green')"
+                onmouseout="changeBg('#ffffff')">Green</a></li>
+        <li><a href="#" onclick="changeBg('orange')" onmouseover="changeBg('orange')"
+                onmouseout="changeBg('pink')">Orange</a></li>
+        <li><a href="#" onclick="changeBg('purple')">Purple</a></li>
+    </ul>
+    <div id="result"></div>
+
+    <h5>넌센스 퀴즈</h5>
+    <pre>
+        1. 질문과 정답에 해당하는 이미지를 다운받는다. 
+        2. 질문 이미지를 클릭하면 정답 이미지를 출력하면 된다.
+           이때 요소.src="경로"를 명시해주면 이미지를 변경할 수 있다.
+    </pre>
+    <img id="quiz" src="../images/down.png" onclick="ImageChange()">
+    <hr />
+
+    <h3>고전 이벤트 모델</h3>
+    <pre>
+        요소가 가지고 있는 이벤트 속성(이벤트 리스너)에 이벤트 핸들러를 연결하는 방법으로
+
+        인라인 모델처럼 HTML 요소에 JS 코드가 포함되는 것이 아닌
+        script 내에서 이벤트 관련코드를 작성할 수 있다.
+    </pre>
+    <button type="button" id="btn1">고전 모델 이벤트 확인</button>
+    <p>노력은 결고 배신하지 않는다.</p>
+
+    <button type="button" id="test2-1">고전 이벤트 모델 확인</button>
+    <button type="button" id="test2-2">test2-1 이벤트제거</button>
+    <button type="button" id="test2-3">고전 이벤트 모델 단점</button>
+
+    <hr />
+
+    <h3>표준이벤트 모델(addEventListner)</h3>
+    <pre>
+        - W3C(HTML, CSS, JS 웹표준 재정 단체)에서 
+        공식적으로 지정한 이벤트 모델(이벤트 동작 지정 방법)
+
+        - 한 요소에 여러 이벤트 핸들러를 설정할 수 있다.
+
+        <!--스타일로 너비와 높이 설정해주세요-->
+        <div id="test3">클릭하면 크기가 늘어나요</div>
+        <hr>
+    </pre>
+
+    <h3>이벤트 예제</h3>
+    <h5>버튼 클릭 - 복습</h5>
+    <p>색상을 영어로 입력한 후 변경 버튼을 클릭하면 #div의 배경색이 변경되도록 하시오.</p>
+
+    <div id="div1"></div>
+    <input type="text" id="input1">
+    <button type="button" id="changeBtn1">변경</button>
+    <hr />
+
+    <form>
+        <textarea rows="8" cols="22" id="printData" readonly></textarea><br />
+        <input type="text" id="word" />
+        <button type="button" id="button1" onclick>출력</button>
+    </form>
+
+    <h3>커서이동</h3>
+    <form name="form3" id="form3">
+        <label>주민등록번호: </label>
+        <input type="text" name="jumin1" id="jumin1" maxlength="6">
+        <label>-</label>
+        <input type="password" name="jumin2" id="jumin2" maxlength="1">******
+    </form>
+
+
+<h1>HTML요소 기본이벤트 제거 </h1>
+<h3>a태그 기본 이벤트 제거</h3>
+<a href="https://www.naver.com" id="goNaver">네이버로 이동</a>
+
+
+
+<!--boby가 닫히기 전에 script 명시-->
+
+    <script src="../js/07_event.js"></script>
+
+</body>
+
+</html>
