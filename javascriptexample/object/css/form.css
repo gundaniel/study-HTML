@@ -1,0 +1,35 @@
+#member{
+    width: 500px;
+}
+
+.input_group{
+    height: 42px;
+    border-bottom: 1px dotted #ccc ;
+    align-content: center;
+
+}
+
+.input_group:last-child{
+    box-sizing: border-box;
+    border-width: 0px;
+    text-align: center;
+}
+.input_group > label:first-child{
+    width: 80px;
+    display: inline-block;
+}
+.input_group >span {
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+}
+
+span{
+    color: red;
+    font-weight: bold;
+}
+
+button{
+    margin: auto;
+
+}

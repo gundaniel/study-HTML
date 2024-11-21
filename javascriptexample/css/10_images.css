@@ -1,0 +1,38 @@
+/** 목록 정의 초기화 및 목록 박스 좌측 배치 */
+.thumbnail {
+    padding: 0; 
+    margin: 0; 
+    list-style: none;
+    width: 120px; 
+    float: left;
+}
+/** 목록의 각 항목에 대한 크기 및 여백 설정 */
+.thumbnail li {
+    width: 100px; 
+    height: 100px; 
+    padding: 5px 10px;
+}
+/** 썸네일 이미지의 크기 설정 */
+.thumbnail img {
+    width: 100px; 
+    height: 100px;
+    cursor: pointer;
+}
+/** 큰 이미지 영역의 배치와 크기, 여백 설정 */
+.view {
+    float:left; 
+    width: 520px; 
+    height: 340px;
+}
+/** 1초 간격으로 보여줄 이미지 스타일 설정*/
+.newView{
+    clear:both; 
+    margin-top:20px; 
+    padding: 5px 0;
+}
+/** 큰 이미지의 크기 설정 */
+.view img, p img {
+    width:500px; 
+    height: 320px; 
+    margin: 5px 10px;
+}

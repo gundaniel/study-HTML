@@ -1,0 +1,28 @@
+form{
+    width:400px;
+
+}
+.input_group {
+    height: 42px;
+    border-bottom: 1px dotted #ccc;
+    font: 1em/40px '돋움', 'Helvetica';
+}
+.input_group:last-child { 
+    border-bottom-width: 0px;
+}
+.input_group > label:first-child {
+    display: inline-block; 
+    width: 80px; 
+}
+.input_group > label.nameStyle{
+    letter-spacing: 24px
+}
+.input_group > button {
+    display: inline-block; 
+    width:100%; 
+    text-align:center;	
+}
+.resultStyle{
+    font-size: 20px; 
+    color: #900020;
+}

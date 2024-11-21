@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>form</title>
+    <!--
+    <style type="text/css">
+        label {
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            background-color: red;
+            box-shadow: 0px 0px 3px 1px gold;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        input {
+            height: 30px;
+            border: 0px;
+            border-top: 3px dotted black;
+            border-bottom: 3px dotted black;
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+            border: 0px;
+            background-color: aquamarine;
+            box-shadow: 0px 0px 3px 1px green;
+            font-size: 16px;
+        }
+
+        table {
+            width: 400px;
+            background-color: white;
+            display: inline-block;
+            box-shadow: 1px 0px 10px 0px red;
+        }
+
+        td {
+            text-align: center;
+            width: 200px;
+        }
+        th{
+            background-color: orange;
+        }
+
+        form {
+            display: inline-block;
+            margin: 30px;
+            box-sizing: content-box;
+            align-content: center;
+        }
+
+        div {
+            width: 700px;
+            height: 700px;
+            margin: auto;
+            border: 1px solid black;
+            background-color: antiquewhite;
+            text-align: center;
+
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    -->
+</head>
+
+<body>
+   <!--
+    <div>
+        <form action="test.jsp" method="get">
+            <label>이름</label> <input type="text" name="name" id="name" required />
+            <button type="submit">전송</button><br />
+            <span id="span"></span>
+            <hr />
+        </form>
+
+        <table border="1">
+            <tr>
+                
+                <th>책 제목</th> 
+                <th>책 가격</th>
+            </tr>
+            <tr>
+                <td>자바 프로그래밍</td> 
+                <td>28000</td>
+            </tr>
+            <tr>
+                <td>html/css/javascript</td>
+                <td>25000</td>
+            </tr>
+            <tr>
+                <td>데이터베이스</td>
+                <td>35000</td>
+            </tr>
+            <tr>
+                <th>합계</th>
+                <th>88000</th>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        document.getElementById("name").addEventListener("focus", function () {
+            let name1 = document.getElementById("name");
+            let span1 = document.getElementById("span");
+            span1.innerText = "입력하세요";
+        })
+        document.getElementById("name").addEventListener("focusout", function () {
+            let name1 = document.getElementById("name");
+            let span1 = document.getElementById("span");
+            span1.innerText = "입력안했니?";
+        })
+    </script>
+
+    -->
+
+
+
+
+    <!--form:속성 action="":서버로 전송할 파일명 method="get" : 전송방식-->
+
+    <form name="form1" id="form1">
+        <div id="member">
+            <fieldset>
+                <legend>회원가입</legend>
+                <div class="input_group">
+                    <label>이름<span>*</span></label>
+                    <input type="text" id="user_name" name="user_name">
+                </div>
+                <div class="input_group">
+                    <label>아이디<span>*</span></label>
+                    <input type="text" id="user_id" name="user_id">
+                </div>
+                <div class="input_group">
+                    <label>성별<span>*</span></label>
+                    <label><input type="radio" id="mam" name="gender">남자</label>
+                    <label><input type="radio" id="girl" name="gender">여자</label>
+                </div>
+                <div class="input_group">
+                    <label>직업<span>*</span></label>
+                    <select name="job" id="job">
+                        <option>---선택하세요----</option>
+                        <option value="front">프론트 개발자</option>
+                        <option value="back">백엔드 개발자</option>
+                        <option value="fullstack">풀스택 개발자</option>
+                    </select>
+                </div>
+                <div class="input_group">
+                    <label>취미<span>*</span></label>
+                    <label for="walk"><input type="checkbox" name="hobby" id="walk">걷기</label>
+                    <label for="soccer"><input type="checkbox" name="hobby" id="soccer">축구</label>
+                    <label for="basketball"><input type="checkbox" name="hobby" id="basketball">농구</label>
+                    <label for="baseball"> <input type="checkbox" name="hobby" id="baseball">야구</label>
+                    <label for="travel"><input type="checkbox" name="hobby" id="travel">여행</label>
+                    <label for="movie"><input type="checkbox" name="hobby" id="movie">영화</label>
+                </div>
+                <div class="input_group">
+                    <button type="submit" id="sendBtn">가입</button>
+                    <button type="reset">초기화</button>
+                </div>
+            </fieldset>
+    </form>
+    </div>
+
+    <script src="../js/form.js"></script>
+
+</body>
+
+</html>
